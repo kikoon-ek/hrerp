@@ -1,20 +1,18 @@
-# 보안 관련 파일만 제외
+# 보안 파일
 .env
 *.key
 *.pem
 
-# OS 관련 파일
+# 시스템 캐시 (개발에 불필요)
+__pycache__/
+*.pyc
 .DS_Store
 Thumbs.db
-
-# IDE 설정 (선택적)
-.vscode/settings.json
-.idea/
-
-# 로그 파일
 *.log
 
-# 임시 파일
-*.tmp
-*.temp
+# 나머지 모든 파일 포함:
+# ✅ node_modules (프론트엔드 의존성)
+# ✅ venv (백엔드 Python 환경)
+# ✅ app.db (SQLite 데이터베이스)
+# ✅ 모든 소스코드 및 설정파일
 
